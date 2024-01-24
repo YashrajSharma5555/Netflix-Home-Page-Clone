@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap");
+
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-image: url("/Background\ Image.jpeg");
+  height: 80vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1000px, 100vw);
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+.main nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+}
+
+nav img {
+  width: 114px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100% - 62px);
+
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero .hero1 {
+  font-weight: bolder;
+  font-size: 48px;
+}
+
+.hero .hero2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.hero .hero3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.separation {
+  height: 6px;
+  background-color: rgb(59, 59, 59);
+}
+.btn {
+  padding: 3px 24px;
+  font-weight: 400;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.hero input {
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(196, 190, 190, 0.432);
+  font-size: 12px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    color: white;
+    max-width: 75vw;
+    margin: auto;
+    align-items: center;
+    height: 500px;
+}
+
+.secImg{
+    position: relative;
+}
+.secImg video{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 555px;
+}
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+    top: 25px;
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+
+}
+
+.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.third .secImg video{
+    width: 347px;
+    top:75px;
+    right: 105px;
+}
+
+.faqbox{
+    background-color: rgb(58, 57, 57);
+    display: flex;
+    padding: 1.5rem;
+    max-width: 60vw;
+    margin: 10px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+    align-items: center;
+    transition: all 0.4s ease-out;
+}
+.faqbox:hover{
+    background-color: rgb(105, 104, 104);
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+footer .questions{
+    padding: 34px 0;
+}
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap:23px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.foot{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width:800px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap:55px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .first{
+        display: flex;
+        justify-content: center;
+        color: white;
+        max-width: 75vw;
+        margin: auto;
+        align-items: center;
+        height: 500px;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .secImg video{
+        width: 390px;
+    }
+    .secImg img{
+        width: 390px;
+    }
+    .first > div :first-child{
+        font-size: 25px;
+    
+    }
+    .third .secImg video{
+        width: 209px;
+    }
+    .hero .hero1 {
+        font-size: 32px;
+      }
+    .main nav{
+        max-width: 90vw;
+    }  
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+      }
+}
